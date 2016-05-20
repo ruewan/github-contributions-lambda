@@ -1,10 +1,16 @@
-Metadata-Version: 1.0
+Metadata-Version: 2.0
 Name: github-contributions
-Version: 1.0.1
+Version: 1.1.0
 Summary: Scrape Github for a user's public contributions.
 Home-page: https://github.com/garnertb/github-contributions
 Author: Tyler Garner
 Author-email: garnertb@prominentedge.com
 License: GNU General Public License
-Description: UNKNOWN
 Platform: UNKNOWN
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: click (==6.6)
+Requires-Dist: requests (==2.9.1)
+
+UNKNOWN
+
+

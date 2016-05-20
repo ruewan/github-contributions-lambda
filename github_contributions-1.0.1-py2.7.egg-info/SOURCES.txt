@@ -1,8 +1,0 @@
-github_contributions/__init__.py
-github_contributions/cli.py
-github_contributions.egg-info/PKG-INFO
-github_contributions.egg-info/SOURCES.txt
-github_contributions.egg-info/dependency_links.txt
-github_contributions.egg-info/entry_points.txt
-github_contributions.egg-info/requires.txt
-github_contributions.egg-info/top_level.txt
