@@ -19,11 +19,11 @@ def get_contributions(usernames):
         response = requests.get('{0}{1}'.format(GITHUB_URL, username))
 
         if not response.ok:
-            contributions['users'].append({username: dict(total=0, longest_streak=0, current_streak=0)})
+            contributions['users'].append({username: dict(total=0)})
             continue
 
         bs = BeautifulSoup(response.content, "html.parser")
-        total = bs.find('div', {'class': 'contributions-calendar'}).findPrevious('h3')
+        total = bs.find('div', {'class': 'js-contribution-graph'}).findNext('h2')
         contributions['users'].append({username: dict(total=int(total.text.split()[0].replace(',', '')))})
         contributions['total'] += int(total.text.split()[0].replace(',', ''))
 

@@ -1,0 +1,3 @@
+[console_scripts]
+contributions = github_contributions.cli:get_contributions_cli
+
